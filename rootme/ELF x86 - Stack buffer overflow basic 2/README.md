@@ -23,4 +23,7 @@ void main()
 }
 ```
 
-In this challenge, the vul
+In this challenge, func `fgets` allows us input 132 characters but var `buf` only handles 128.
+
+<br><br> So we can overwrite value of `func()` by address of `shell()` to get shell.
+
