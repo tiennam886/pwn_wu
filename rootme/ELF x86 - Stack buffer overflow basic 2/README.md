@@ -28,6 +28,7 @@ In this challenge, func `fgets` allows us input 132 characters but var `buf` onl
 <br> So we can overwrite value of `func()` by address of `shell()` to get shell.
 
 <br> Using gdb to get address of func `shell` is 0x08048516
+<br>
 ![](BO_2.png)
 
 ```bash
