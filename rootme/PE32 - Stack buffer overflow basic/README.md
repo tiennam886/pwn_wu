@@ -72,6 +72,7 @@ hits: 1
 At start of main code we can see the stack frame allocation. The size allocated to it is 0x14 (20) bytes. But at first instruction the main function pushes the EBP register (4 bytes). If we sum, we have 24 bytes before the return address.
 
 Result:
+<br>
 ![](PE_BO_1.png)
 
 
